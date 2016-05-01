@@ -15,7 +15,7 @@ ALTER TABLE [dbo].[Athlete_Team]  ADD  CONSTRAINT [FK_Athlete_Team_Athletes] FOR
 REFERENCES [dbo].[Athletes] ([Id])
 GO
 
-ALTER TABLE [dbo].[Athlete_Yeam] CHECK CONSTRAINT [FK_Athlete_Team_Athletes]
+ALTER TABLE [dbo].[Athlete_Team] CHECK CONSTRAINT [FK_Athlete_Team_Athletes]
 GO
 
 ALTER TABLE [dbo].[Athlete_Team]  ADD  CONSTRAINT [FK_Athlete_Team_Teams] FOREIGN KEY([TeamId])
